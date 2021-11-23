@@ -1,0 +1,17 @@
+.footer__container {
+  width: 100vw;
+  background: #4256b2;
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+
+    .footer__copyright {
+      color: rgba(255, 255, 255, 0.5);
+      font-weight: 600;
+    }
+
+
+  }
+}

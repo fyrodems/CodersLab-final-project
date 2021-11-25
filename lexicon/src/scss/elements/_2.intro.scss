@@ -1,9 +1,54 @@
-.intro {
-  //background: url("../../images/gadgets-gdf17047e8_1920.jpg");
+.intro__container {
+  display: grid;
+  place-items: center;
   .container {
-    img {
-      width: 100px;
-      height: 100px;
+    display: flex;
+    margin: 40px;
+    justify-content: space-between;
+    position: relative;
+    height: 350px;
+  }
+
+  .intro__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-width: 350px;
+    width: 100%;
+    gap: 50px
+  }
+  .intro__title {
+    font-size: 2.5rem;
+    //margin-bottom: 100px;
+    text-shadow: 0 2px 2px $color-slategray;
+    font-weight: 600;
+    line-height: 3rem;
+    &::after {
+      content: "";
+      margin-top: 20px;
+      display: block;
+      height: 3px;
+      border-radius: 8px;
+      max-width: 300px;
+      width: 100%;
+      background: $color-darkslategray;
+      box-shadow: 0 0 2px $color-slategray;
     }
   }
+
+  .intro__description {
+    font-size: 1.3rem;
+    width: 130%;
+    line-height: 1.5rem;
+  }
+
+  img {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    transform: scale(1.2);
+  }
+
+
+
 }

@@ -21,8 +21,8 @@ export default function BasicMenu() {
 
             <nav className="header__nav">
                 <ul className="nav__list">
+                    <MenuItem className="list__element"><Link to="/get-started">Get Started</Link> </MenuItem>
                     <MenuItem className="list__element"><Link to="/about">About</Link> </MenuItem>
-                    <MenuItem className="list__element"><Link to="/something">something</Link> </MenuItem>
                     <MenuItem className="list__element"><Link to="/contact">Contact</Link> </MenuItem>
                     {/*<MenuItem style={{"display": "inline-block"}}><Link to="/kontakt" onClick={handleClose}>Kontakt</Link> </MenuItem>*/}
                 </ul>

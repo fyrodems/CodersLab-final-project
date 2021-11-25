@@ -13,8 +13,9 @@ function App() {
        <Menu/>
      <Routes>
        <Route exact path="/" element={<Home/>}/>
-       <Route exact path="/kontakt" element={<Contact/>}/>
-       <Route exact path="/onas" element={<About/>}/>
+       <Route exact path="/contact" element={<Contact/>}/>
+       <Route exact path="/about" element={<About/>}/>
+       <Route exact path="/get-started" element={<About/>}/>
      </Routes>
        <Footer/>
      </BrowserRouter>

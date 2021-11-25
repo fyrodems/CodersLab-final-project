@@ -1,10 +1,11 @@
 import React from 'react';
+import Intro from "../small-components/Intro";
 
 const Home = () => {
     return (
-        <div>
-            To jest strona głowna
-        </div>
+        <>
+            <Intro/>
+        </>
     );
 };
 

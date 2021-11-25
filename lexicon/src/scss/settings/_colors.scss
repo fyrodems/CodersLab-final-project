@@ -1,8 +1,5 @@
-//gradient colors
-$color-gradient-first: #718096;
-$color-gradient-second: #2d3748;
+$color-slategray: #718096;
+$color-darkslategray: #2d3748;
 
-$color-gradient: $color-gradient-first, ($color-gradient-second, rgba(113, 128, 150, 0));
-$gradient: linear-gradient(to bottom left, $color-gradient);
-
-
+$color-transparent-white: rgba(255, 255, 255, 0.5);
+$color-cornflowerblue: #7da3c9

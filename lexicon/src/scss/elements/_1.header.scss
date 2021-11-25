@@ -1,6 +1,6 @@
 .header__container {
   width: 100vw;
-  background: $color-gradient-second;
+  background: $color-darkslategray;
   //background: #4256b2;
   .container {
     display: flex;
@@ -14,7 +14,7 @@
     gap: 3rem;
   }
   .list__element {
-    display: block;
+    display: inline-block;
     font-family: $font-open-sans;
     font-weight: 700;
     font-size: 0.9rem;

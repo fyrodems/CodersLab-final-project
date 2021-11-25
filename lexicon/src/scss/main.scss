@@ -1,5 +1,12 @@
-footer {
-  display: flex;
-  height: 300px;
-  background: red;
-}
+@import "generic/reset";
+
+@import "settings/mixins";
+@import "settings/fonts";
+@import "settings/colors";
+@import "settings/common-styles";
+
+@import "elements/1.header";
+@import "elements/footer";
+@import "elements/contact-form";
+@import "elements/home";
+

@@ -1,43 +1,35 @@
 import * as React from 'react';
-import Button from '@mui/material/Button';
-import Menu from '@mui/material/Menu';
+// import Button from '@mui/material/Button';
+//import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import {Link} from "react-router-dom";
+import logo from '../../images/logo-white.png'
+import logoImg from "../../images/logo-icon(x1).png"
 
 export default function BasicMenu() {
-    const [anchorEl, setAnchorEl] = React.useState(null);
-    const open = Boolean(anchorEl);
-    const handleClick = (event) => {
-        setAnchorEl(event.currentTarget);
-    };
-    const handleClose = () => {
-        setAnchorEl(null);
-    };
 
     return (
-        <div>
-            <Button
-                id="basic-button"
-                aria-controls="basic-menu"
-                aria-haspopup="true"
-                aria-expanded={open ? 'true' : undefined}
-                onClick={handleClick}
-            >
-                Dashboard
-            </Button>
-            <Menu
-                id="basic-menu"
-                anchorEl={anchorEl}
-                open={open}
-                onClose={handleClose}
-                MenuListProps={{
-                    'aria-labelledby': 'basic-button',
-                }}
-            >
-                <MenuItem onClick={handleClose}>Profile</MenuItem>
-                <MenuItem onClick={handleClose}>My account</MenuItem>
-                <MenuItem style={{"display": "inline-block"}}><Link to="/kontakt" onClick={handleClose}>Kontakt</Link> </MenuItem>
-            </Menu>
+<>
+    <header className="header__container">
+        <div className="container">
+            <MenuItem  style={{"display": "inline-block"}}>
+                <Link className="logo" to="/">
+                    <img src={logoImg} alt="Logo"/>
+                    <img src={logo} alt="Logo" />
+                </Link>
+            </MenuItem>
+
+            <nav className="header__nav">
+                <ul className="nav__list">
+                    <MenuItem className="list__element"><Link to="/about">About</Link> </MenuItem>
+                    <MenuItem className="list__element"><Link to="/something">something</Link> </MenuItem>
+                    <MenuItem className="list__element"><Link to="/contact">Contact</Link> </MenuItem>
+                    {/*<MenuItem style={{"display": "inline-block"}}><Link to="/kontakt" onClick={handleClose}>Kontakt</Link> </MenuItem>*/}
+                </ul>
+            </nav>
         </div>
+    </header>
+
+    </>
     );
 }

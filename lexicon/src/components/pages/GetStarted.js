@@ -3,7 +3,8 @@ import React from 'react';
 const GetStarted = () => {
 
     const mouseEnterEvent = (e) => {
-        
+        const gsContainer = e.target.parentElement.parentElement;
+        gsContainer.addClass("hover-left");
     }
 
     return (

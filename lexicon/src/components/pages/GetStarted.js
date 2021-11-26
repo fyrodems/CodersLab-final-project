@@ -2,23 +2,17 @@ import React from 'react';
 
 const GetStarted = () => {
 
-    const mouseEnterEvent = (e) => {
-        const gsContainer = e.target.parentElement.parentElement;
-        gsContainer.addClass("hover-left");
-    }
-
     return (
         <div className="gs__container">
-        <div className="container">
-            <div className="split left" onMouseEnter={mouseEnterEvent}>
-                <h1>The Designer</h1>
-                <a href="/get-started/databases" className="gs__button">Read More</a>
+
+            <div className="gs__left" >
+                <h1>Articles</h1>
+                <a href="/get-started/articles" className="gs__button">Read More</a>
             </div>
-            <div className="split right">
-                <h1>The Programmer</h1>
-                <a href="/get-started/computer-networks" className="gs__button">Read More</a>
+            <div className="gs__right">
+                <h1>Train</h1>
+                <a href="/get-started/train" className="gs__button">Go!</a>
             </div>
-        </div>
         </div>
     );
 };

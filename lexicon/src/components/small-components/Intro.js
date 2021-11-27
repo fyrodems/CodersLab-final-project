@@ -15,6 +15,7 @@ const Intro = () => {
                 <img src={introJPG} alt="two business partners handshaking"/>
             </div>
         </section>
+
     );
 };
 

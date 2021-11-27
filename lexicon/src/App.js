@@ -7,6 +7,9 @@ import Menu from "./components/common/Menu"
 import "./scss/main.scss"
 import Footer from "./components/common/Footer"
 import GetStarted from "./components/pages/GetStarted";
+import Train from "./components/pages/pages-under-getstarted/Train"
+import Articles from "./components/pages/pages-under-getstarted/Articles"
+import {databasesVocabulary} from "../../lexicon/src/data/databases-vocabulary";
 
 function App() {
   return (
@@ -17,8 +20,8 @@ function App() {
        <Route exact path="/contact" element={<Contact/>}/>
        <Route exact path="/about" element={<About/>}/>
        <Route exact path="/get-started" element={<GetStarted/>}/>
-       {/*<Route exact path="/get-started/articles" element={</>}/>*/}
-       {/*<Route exact path="/get-started/train" element={</>}/>*/}
+       <Route exact path="/get-started/articles" element={<Articles/>}/>
+       <Route exact path="/get-started/train" element={<Train vocabulary={databasesVocabulary}/>}/>
      </Routes>
        <Footer/>
      </BrowserRouter>

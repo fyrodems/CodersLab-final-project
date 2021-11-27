@@ -7,7 +7,7 @@ const GetStarted = () => {
 
             <div className="gs__left" >
                 <h1>Articles</h1>
-                <a href="/get-started/articles" className="gs__button">Read More</a>
+                <a href="/get-started/articles" className="gs__button">Read!</a>
             </div>
             <div className="gs__right">
                 <h1>Train</h1>

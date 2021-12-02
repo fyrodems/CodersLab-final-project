@@ -1,3 +1,4 @@
-.train__container {
-  height: calc(100vh - 167px)
+.flashcard__container {
+  height: calc(100vh - (167px + 30px));
+  padding-top: 30px;
 }

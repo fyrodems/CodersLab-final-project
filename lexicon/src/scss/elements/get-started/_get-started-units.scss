@@ -1,0 +1,27 @@
+.articles__container {
+  .container { //holds flexed small unit containers
+    max-width: 900px;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+}
+.articles__unit {
+  width: 200px;
+  height: 200px;
+  background: $color-dimgray;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  transition: 1s ease;
+  text-transform: uppercase;
+  padding: 20px;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.05);
+    transition: 1s ease;
+  }
+}
+

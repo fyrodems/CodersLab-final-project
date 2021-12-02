@@ -2,11 +2,9 @@ import React from 'react';
 
 const GetStartedUnit = ({title}) => {
     return (
-        <a href="/get-started/train">
-        <div className="unit__container" >
+        <div className="articles__unit" >
             <h2>{title}</h2>
         </div>
-        </a>
     );
 };
 

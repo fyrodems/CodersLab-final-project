@@ -1,0 +1,83 @@
+.intro {
+  background:
+          linear-gradient(
+                  rgba(0, 0, 0, 0.7),
+                  rgba(0, 0, 0, 0.7)),
+          url('https://www.wallpapertip.com/wmimgs/78-787014_learning-wallpaper.jpg');
+  background-position: (0, -200px);
+  color: white;
+  height: 600px;
+  text-align: center;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+  }
+}
+
+.intro h1 {
+  font-size: 100px;
+  text-transform: uppercase;
+  font-family: $font-noto-sans;
+  font-weight: bold;
+  margin: 0;
+  padding: 50px 0 0 0;
+}
+
+.intro p {
+  font-family: $font-noto-sans;
+  font-size: 22px;
+  margin: 50px;
+  padding: 0 0 20px 0;
+  line-height: 30px;
+}
+
+.btn-start {
+  background-color: $color-darkslategray;
+  font-size: 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 8px 25px;
+
+}
+
+.premium h2 {
+  color: $color-main-site;
+  font-size: 40px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.premium p {
+  color: #efefef;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  font-family: $font-noto-sans;
+}
+
+.btn-white {
+  background-color: #eee;
+  color: #1c1c1c;
+  font-size: 18px;
+  padding: 8px 30px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.premium {
+  background: linear-gradient(
+                  rgba(0, 0, 0, 0.5),
+                  rgba(0, 0, 0, 0.5));
+  background-color: $color-darkslategray;
+  text-align: center;
+  padding: 70px 0 70px;
+  .container {
+    display: block;
+  }
+}

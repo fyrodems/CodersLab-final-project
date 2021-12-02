@@ -72,7 +72,6 @@ class Flashcards extends React.Component {
     render() {
         return (
             <section className="flashcard__container">
-
                 <FlashcardComponent dataSource={this.cardData} />
             </section>
         );

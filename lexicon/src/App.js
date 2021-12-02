@@ -18,6 +18,7 @@ import {
     IsOrAre
 } from "./components/pages/pages-under-getstarted/Articles-texts";
 import Flashcards from "./components/pages/pages-under-getstarted/Train-Flashcards"
+import QuizDatabases from "./components/pages/pages-under-getstarted/Quiz";
 
 function App() {
   return (
@@ -40,7 +41,7 @@ function App() {
          <Route exact path="/get-started/articles/is-or-are" element={<IsOrAre/>}/>
 
        <Route exact path="/get-started/train" element={<Train/>}/>
-         <Route exact path="/get-started/train/quiz" element={<Flashcards/>}/>
+         <Route exact path="/get-started/train/quiz" element={<QuizDatabases/>}/>
          <Route exact path="/get-started/train/flashcards" element={<Flashcards vocabulary={databasesVocabulary}/>}/>
 
      </Routes>

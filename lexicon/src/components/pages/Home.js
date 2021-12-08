@@ -17,7 +17,7 @@ const Home = () => {
         <div className="premium">
             <div className="container">
                 <h2>Go Premium</h2>
-                <p>Receive recommendations based on your activity to level up.</p>
+                <p>Receive recommendations based on your knowledge to level up.</p>
                 <a href="/contact" className="btn-white">Contact us</a>
             </div>
         </div>
